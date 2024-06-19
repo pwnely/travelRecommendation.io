@@ -1,60 +1,29 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-<title>travelrecommendations</title>
-
-
+    <title>Travel Recommendations</title>
 </head>
 
-
 <body>
-
     <nav>
-        <a href="/home/">home</a> |
-        <a href="/aboutus.html">about us</a> |
-        <a href="/contactus.html/">contact us</a> |
-        <input type="text" placeholder="Search..">
-        <button type="button">search!</button>
-        <a href="/reset/">reset</a>
-      </nav>
+        <a href="/home/">Home</a> |
+        <a href="/aboutus.html">About Us</a> |
+        <a href="/contactus.html/">Contact Us</a> |
+        <input type="text" id="searchInput" placeholder="Search..">
+        <button type="button" onclick="searchByKeyword()">Search!</button>
+        <a href="javascript:void(0)" onclick="clearSearch()">Reset</a>
+    </nav>
 
-
-      <header style="background-image: url('landscape.jpg');">
-
-
+    <header style="background-image: url('landscape.jpg');">
         <h1>Travel Recommendations</h1>
         <p>Posted by DG</p>
-        <p>travel recommendations website </p>
+        <p>Travel recommendations website</p>
+        <button type="button" onclick="getRecommendations()">Book now!</button>
+        <div id="results"></div>
+    </header>
 
-        <button type="button">Book now!</button>
-        
-        
-      </header>
-
-
-
-
-
-
-
-
+    <script src="travel_recommendation.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
