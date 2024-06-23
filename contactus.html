@@ -3,6 +3,24 @@
 <head>
 <title>travelrecommendations</title>
 
+    <style>
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+        header {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+    </style>
 
 </head>
 
@@ -10,9 +28,9 @@
 <body>
 
     <nav>
-        <a href="/home/">home</a> |
-        <a href="/aboutus.html">about us</a> |
-        <a href="/contactus.html/">contact us</a> |
+        <a href="home.html">home</a> |
+        <a href="aboutus.html">about us</a> |
+        <a href="contactus.html">contact us</a> |
         <input type="text" placeholder="Search..">
         <button type="button">search!</button>
         <a href="/reset/">reset</a>
@@ -21,16 +39,17 @@
 
       <header style="background-image: url('landscape.jpg');">
 
-
+    <div>
       <h1>Contact us</h1>
       <p>contact information <p>
+      </div>
 
 
-        <input type="text" placeholder="your name">
-        <input type="email" placeholder="your e-mail">
-
+        <br><input type="text" placeholder="your name"></br>
+        <br><input type="email" placeholder="your e-mail"></br>
         <textarea id="message" name="message" rows="4" cols="50">
-write you're message here
+
+            write you're message here
 </textarea>
 
         
